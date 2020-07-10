@@ -1,0 +1,6 @@
+main: me.magicpizzabox.disappearingfloorplugin.Main
+name: DisappearingFloor
+version: 1.0
+author: MagicPizzaBox
+description: The ground consistantly deepens and ignites below the player.
+api-version: 1.16
