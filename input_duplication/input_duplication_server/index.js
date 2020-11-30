@@ -26,6 +26,16 @@ const server = net.createServer(function(socket) {
         }
     });
 
+    var mouseupLastTime = 0;
+    iohook.on('mouseup', function(e) {
+        console.log('mouseup!')
+        const date = new Date();
+        if(date.getTime() - mouseupLastTime >= 50) {
+            mouseupLastTime = date.getTime();
+            socket.write('r ' + e.button);
+        }
+    });
+
     var keydownLastTime = 0;
     iohook.on('keydown', function(e) {
         const date = new Date();

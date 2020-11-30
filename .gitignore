@@ -1,4 +1,11 @@
 /.metadata/
+
 /input_duplication_web/
+/input_duplication_ti84/
+/self_playing_tbone/
+/ev3_control/
+/mcHackClient/
+
 node_modules
 package-lock.json
+.venv
